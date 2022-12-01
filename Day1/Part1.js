@@ -13,7 +13,7 @@
 */
 var path = require('path');
 var fs = require('fs');
-var input = fs.readFileSync(path.join(__dirname, './Part1Input.txt'), 'utf-8');
+var input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf-8');
 var byElf = input.split('\n\n');
 var largestCalories = 0;
 byElf.forEach(function (elfCalories) {

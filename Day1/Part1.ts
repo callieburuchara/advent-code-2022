@@ -16,9 +16,9 @@
 const path = require('path');
 const fs = require('fs');
 
-const input = fs.readFileSync(path.join(__dirname, './Part1Input.txt'), 'utf-8');
+const input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf-8');
 const byElf = input.split('\n\n');
-let largestCalories = 0;
+let largestCalories: number = 0;
 
 byElf.forEach((elfCalories: string) => {
   const elfNumberCalories = elfCalories.split('\n').map(Number);
