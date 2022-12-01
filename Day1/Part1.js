@@ -1,5 +1,4 @@
 // Source: https://adventofcode.com/2022/day/1
-
 /*
 - Input is a list of numbers, always valid
   - Visually, looks like there are no stray spaces
@@ -12,18 +11,14 @@
 
 - How to import from .txt file into TS?
 */
-
-const path = require('path');
-const fs = require('fs');
-
-const input = fs.readFileSync(path.join(__dirname, './Part1Input.txt'), 'utf-8');
-const byElf = input.split('\n\n');
-let largestCalories = 0;
-
-byElf.forEach((elfCalories: string) => {
-  const elfNumberCalories = elfCalories.split('\n').map(Number);
-  const total = elfNumberCalories.reduce((s, n): number => s + n );
-  largestCalories = total > largestCalories ? total : largestCalories;
-})
-
+var path = require('path');
+var fs = require('fs');
+var input = fs.readFileSync(path.join(__dirname, './Part1Input.txt'), 'utf-8');
+var byElf = input.split('\n\n');
+var largestCalories = 0;
+byElf.forEach(function (elfCalories) {
+    var elfNumberCalories = elfCalories.split('\n').map(Number);
+    var total = elfNumberCalories.reduce(function (s, n) { return s + n; });
+    largestCalories = total > largestCalories ? total : largestCalories;
+});
 console.log(largestCalories);
