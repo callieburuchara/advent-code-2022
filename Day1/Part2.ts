@@ -1,16 +1,16 @@
 // Source: https://adventofcode.com/2022/day/2
 
-const path2 = require('path');
-const fs2 = require('fs');
+const path = require('path');
+const fs = require('fs');
 
-const input2 = fs2.readFileSync(path2.join(__dirname, './input.txt'), 'utf-8');
-const byElf2 = input2.split('\n\n');
+const input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf-8');
+const byElf = input.split('\n\n');
 
 let first: number = 0;
 let second : number = 0;
 let third : number = 0;
 
-byElf2.forEach((elfCalories: string) => {
+byElf.forEach((elfCalories: string) => {
   const elfNumberCalories = elfCalories.split('\n').map(Number);
   const total = elfNumberCalories.reduce((s, n): number => s + n );
   if (total > first) {
@@ -25,3 +25,5 @@ byElf2.forEach((elfCalories: string) => {
 const sumTotal = first + second + third;
 
 console.log(sumTotal);
+
+export {};

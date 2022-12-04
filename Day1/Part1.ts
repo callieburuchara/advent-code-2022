@@ -27,3 +27,5 @@ byElf.forEach((elfCalories: string) => {
 })
 
 console.log(largestCalories);
+
+export {};
