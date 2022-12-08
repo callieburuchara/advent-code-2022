@@ -5,3 +5,7 @@
 type CrateObject = {[key: string]: string[]}
 const crateObj : CrateObject = {};
 ```
+- An array of string arrays type declaration: 
+```ts
+let newArray: string[][]
+```

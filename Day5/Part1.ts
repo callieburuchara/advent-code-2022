@@ -9,7 +9,8 @@ directions.forEach((direction: string) => {
     crates[end].push(toMove);
     amount -= 1;
   }
-})
+});
+
 const topCrates: string[] = [];
 
 numberKeys.forEach((number: string) => {
@@ -17,3 +18,5 @@ numberKeys.forEach((number: string) => {
 })
 
 console.log(topCrates.join(''));
+
+export {};
