@@ -1,0 +1,3 @@
+# TypeScript Lessons Learned/Reviewed
+
+- 
